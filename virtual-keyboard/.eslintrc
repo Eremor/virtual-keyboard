@@ -21,8 +21,5 @@
       "ignoreExternal": true
     }],
     "arrow-body-style": ["error", "as-needed"]
-  },
-  "settings": {
-    "import/resolver": "webpack"
   }
 }
