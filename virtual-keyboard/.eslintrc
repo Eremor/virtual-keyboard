@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "rules": {
+    "no-plusplus": "off",
+    "no-console": "warn",
+    "max-len": ["warn", { "code": 120 }],
+    "indent": ["warn", 2, {
+      "SwitchCase": 1
+    }],
+    "operator-linebreak": ["error", "after"],
+    "import/no-cycle": [0, {
+      "ignoreExternal": true
+    }],
+    "arrow-body-style": ["error", "as-needed"]
+  },
+  "settings": {
+    "import/resolver": "webpack"
+  }
+}
