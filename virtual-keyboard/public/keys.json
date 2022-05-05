@@ -1,0 +1,332 @@
+[
+  [
+    {
+      "classes": ["key"],
+      "content": "`",
+      "data": "backQuot"
+    },
+    {
+      "classes": ["key"],
+      "content": "1",
+      "data": "number1"
+    },
+    {
+      "classes": ["key"],
+      "content": "2",
+      "data": "number2"
+    },
+    {
+      "classes": ["key"],
+      "content": "3",
+      "data": "number3"
+    },
+    {
+      "classes": ["key"],
+      "content": "4",
+      "data": "number4"
+    },
+    {
+      "classes": ["key"],
+      "content": "5",
+      "data": "number5"
+    },
+    {
+      "classes": ["key"],
+      "content": "6",
+      "data": "number6"
+    },
+    {
+      "classes": ["key"],
+      "content": "7",
+      "data": "number7"
+    },
+    {
+      "classes": ["key"],
+      "content": "8",
+      "data": "number8"
+    },
+    {
+      "classes": ["key"],
+      "content": "9",
+      "data": "number9"
+    },
+    {
+      "classes": ["key"],
+      "content": "0",
+      "data": "number0"
+    },
+    {
+      "classes": ["key"],
+      "content": "-",
+      "data": "minus"
+    },
+    {
+      "classes": ["key"],
+      "content": "=",
+      "data": "equal"
+    },
+    {
+      "classes": ["key", "key--dark", "key--wide"],
+      "content": "Backspace",
+      "data": "backspace"
+    }
+  ],
+  [
+    {
+      "classes": ["key", "key--dark"],
+      "content": "Tab",
+      "data": "tab"
+    },
+    {
+      "classes": ["key"],
+      "content": "q",
+      "data": "keyQ"
+    },
+    {
+      "classes": ["key"],
+      "content": "w",
+      "data": "keyW"
+    },
+    {
+      "classes": ["key"],
+      "content": "e",
+      "data": "keyE"
+    },
+    {
+      "classes": ["key"],
+      "content": "r",
+      "data": "keyR"
+    },
+    {
+      "classes": ["key"],
+      "content": "t",
+      "data": "keyT"
+    },
+    {
+      "classes": ["key"],
+      "content": "y",
+      "data": "keyY"
+    },
+    {
+      "classes": ["key"],
+      "content": "u",
+      "data": "keyU"
+    },
+    {
+      "classes": ["key"],
+      "content": "i",
+      "data": "keyI"
+    },
+    {
+      "classes": ["key"],
+      "content": "o",
+      "data": "keyO"
+    },
+    {
+      "classes": ["key"],
+      "content": "p",
+      "data": "keyP"
+    },
+    {
+      "classes": ["key"],
+      "content": "[",
+      "data": "bracketLeft"
+    },
+    {
+      "classes": ["key"],
+      "content": "]",
+      "data": "bracketRight"
+    },
+    {
+      "classes": ["key"],
+      "content": "\\",
+      "data": "backslash"
+    },
+    {
+      "classes": ["key", "key--dark"],
+      "content": "Del",
+      "data": "delete"
+    }
+  ],
+  [
+    {
+      "classes": ["key", "key--wide", "key--dark"],
+      "content": "CapsLock",
+      "data": "capsLock"
+    },
+    {
+      "classes": ["key"],
+      "content": "a",
+      "data": "keyA"
+    },
+    {
+      "classes": ["key"],
+      "content": "s",
+      "data": "keyS"
+    },
+    {
+      "classes": ["key"],
+      "content": "d",
+      "data": "keyD"
+    },
+    {
+      "classes": ["key"],
+      "content": "f",
+      "data": "keyF"
+    },
+    {
+      "classes": ["key"],
+      "content": "g",
+      "data": "keyG"
+    },
+    {
+      "classes": ["key"],
+      "content": "h",
+      "data": "keyH"
+    },
+    {
+      "classes": ["key"],
+      "content": "j",
+      "data": "keyJ"
+    },
+    {
+      "classes": ["key"],
+      "content": "k",
+      "data": "keyK"
+    },
+    {
+      "classes": ["key"],
+      "content": "l",
+      "data": "keyL"
+    },
+    {
+      "classes": ["key"],
+      "content": ";",
+      "data": "semicolon"
+    },
+    {
+      "classes": ["key"],
+      "content": "'",
+      "data": "quote"
+    },
+    {
+      "classes": ["key", "key--dark", "key--wide"],
+      "content": "Enter",
+      "data": "enter"
+    }
+  ],
+  [
+    {
+      "classes": ["key", "key--wide", "key--dark"],
+      "content": "Shift",
+      "data": "shiftLeft"
+    },
+    {
+      "classes": ["key"],
+      "content": "z",
+      "data": "keyZ"
+    },
+    {
+      "classes": ["key"],
+      "content": "x",
+      "data": "keyX"
+    },
+    {
+      "classes": ["key"],
+      "content": "c",
+      "data": "keyC"
+    },
+    {
+      "classes": ["key"],
+      "content": "v",
+      "data": "keyV"
+    },
+    {
+      "classes": ["key"],
+      "content": "b",
+      "data": "keyB"
+    },
+    {
+      "classes": ["key"],
+      "content": "n",
+      "data": "keyN"
+    },
+    {
+      "classes": ["key"],
+      "content": "m",
+      "data": "keyM"
+    },
+    {
+      "classes": ["key"],
+      "content": ",",
+      "data": "comma"
+    },
+    {
+      "classes": ["key"],
+      "content": ".",
+      "data": "dot"
+    },
+    {
+      "classes": ["key"],
+      "content": "\/",
+      "data": "slash"
+    },
+    {
+      "classes": ["key", "key--dark"],
+      "content": "▲",
+      "data": "keyUp"
+    },
+    {
+      "classes": ["key", "key--dark", "key--wide"],
+      "content": "Shift",
+      "data": "shiftRight"
+    }
+  ],
+  [
+    {
+      "classes": ["key", "key--dark"],
+      "content": "Ctrl",
+      "data": "ctrlLeft"
+    },
+    {
+      "classes": ["key", "key--dark"],
+      "content": "Win",
+      "data": "window"
+    },
+    {
+      "classes": ["key", "key--dark"],
+      "content": "Alt",
+      "data": "altLeft"
+    },
+    {
+      "classes": ["key", "key--long"],
+      "content": "",
+      "data": "space"
+    },
+    {
+      "classes": ["key", "key--dark"],
+      "content": "Alt",
+      "data": "altRight"
+    },
+    {
+      "classes": ["key", "key--dark"],
+      "content": "◄",
+      "data": "keyLeft"
+    },
+    {
+      "classes": ["key", "key--dark"],
+      "content": "▼",
+      "data": "keyDown"
+    },
+    {
+      "classes": ["key", "key--dark"],
+      "content": "►",
+      "data": "keyRight"
+    },
+    {
+      "classes": ["key", "key--dark"],
+      "content": "Ctrl",
+      "data": "ctrlRight"
+    }
+  ]
+]
