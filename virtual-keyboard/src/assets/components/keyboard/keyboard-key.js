@@ -1,4 +1,4 @@
-import { BaseComponent } from '../base-component.js';
+import { BaseComponent } from '../base-component';
 
 export class Key extends BaseComponent {
   constructor(classes, content, dataType) {

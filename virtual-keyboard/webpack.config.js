@@ -19,7 +19,7 @@ module.exports = ({develop}) => ({
   mode: develop ? 'development' : 'production',
   devtool: develop ? 'inline-source-map' : false,
   entry: {
-    main: './src/index.js'
+    main: path.resolve(__dirname, './src/index.js')
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -30,13 +30,7 @@ module.exports = ({develop}) => ({
     rules: [
       {
         test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
-        }
+        exclude: /node_modules/,
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
@@ -55,9 +49,6 @@ module.exports = ({develop}) => ({
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       }
     ]
-  },
-  resolve: {
-    extensions: ['.js'],
   },
   plugins: [
     new HtmlWebpackPlugin({

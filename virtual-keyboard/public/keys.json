@@ -1,332 +1,332 @@
 [
   [
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "`",
-      "data": "backQuot"
+      "data": "Backquote"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "1",
-      "data": "number1"
+      "data": "Digit1"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "2",
-      "data": "number2"
+      "data": "Digit2"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "3",
-      "data": "number3"
+      "data": "Digit3"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "4",
-      "data": "number4"
+      "data": "Digit4"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "5",
-      "data": "number5"
+      "data": "Digit5"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "6",
-      "data": "number6"
+      "data": "Digit6"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "7",
-      "data": "number7"
+      "data": "Digit7"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "8",
-      "data": "number8"
+      "data": "Digit8"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "9",
-      "data": "number9"
+      "data": "Digit9"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "0",
-      "data": "number0"
+      "data": "Digit0"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "-",
-      "data": "minus"
+      "data": "Minus"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "=",
-      "data": "equal"
+      "data": "Equal"
     },
     {
-      "classes": ["key", "key--dark", "key--wide"],
+      "classes": ["key", "key--dark", "key--wide", "key-hover"],
       "content": "Backspace",
-      "data": "backspace"
+      "data": "Backspace"
     }
   ],
   [
     {
-      "classes": ["key", "key--dark"],
+      "classes": ["key", "key--dark", "key-hover"],
       "content": "Tab",
-      "data": "tab"
+      "data": "Tab"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "q",
-      "data": "keyQ"
+      "data": "KeyQ"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "w",
-      "data": "keyW"
+      "data": "KeyW"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "e",
-      "data": "keyE"
+      "data": "KeyE"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "r",
-      "data": "keyR"
+      "data": "KeyR"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "t",
-      "data": "keyT"
+      "data": "KeyT"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "y",
-      "data": "keyY"
+      "data": "KeyY"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "u",
-      "data": "keyU"
+      "data": "KeyU"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "i",
-      "data": "keyI"
+      "data": "KeyI"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "o",
-      "data": "keyO"
+      "data": "KeyO"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "p",
-      "data": "keyP"
+      "data": "KeyP"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "[",
-      "data": "bracketLeft"
+      "data": "BracketLeft"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "]",
-      "data": "bracketRight"
+      "data": "BracketRight"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "\\",
-      "data": "backslash"
+      "data": "Backslash"
     },
     {
-      "classes": ["key", "key--dark"],
+      "classes": ["key", "key--dark", "key-hover"],
       "content": "Del",
-      "data": "delete"
+      "data": "Delete"
     }
   ],
   [
     {
-      "classes": ["key", "key--wide", "key--dark"],
+      "classes": ["key", "key--wide", "key--dark", "key-hover"],
       "content": "CapsLock",
-      "data": "capsLock"
+      "data": "CapsLock"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "a",
-      "data": "keyA"
+      "data": "KeyA"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "s",
-      "data": "keyS"
+      "data": "KeyS"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "d",
-      "data": "keyD"
+      "data": "KeyD"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "f",
-      "data": "keyF"
+      "data": "KeyF"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "g",
-      "data": "keyG"
+      "data": "KeyG"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "h",
-      "data": "keyH"
+      "data": "KeyH"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "j",
-      "data": "keyJ"
+      "data": "KeyJ"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "k",
-      "data": "keyK"
+      "data": "KeyK"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "l",
-      "data": "keyL"
+      "data": "KeyL"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": ";",
-      "data": "semicolon"
+      "data": "Semicolon"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "'",
-      "data": "quote"
+      "data": "Quote"
     },
     {
-      "classes": ["key", "key--dark", "key--wide"],
+      "classes": ["key", "key--dark", "key--wide", "key-hover"],
       "content": "Enter",
-      "data": "enter"
+      "data": "Enter"
     }
   ],
   [
     {
-      "classes": ["key", "key--wide", "key--dark"],
+      "classes": ["key", "key--wide", "key--dark", "key-hover"],
       "content": "Shift",
-      "data": "shiftLeft"
+      "data": "ShiftLeft"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "z",
-      "data": "keyZ"
+      "data": "KeyZ"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "x",
-      "data": "keyX"
+      "data": "KeyX"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "c",
-      "data": "keyC"
+      "data": "KeyC"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "v",
-      "data": "keyV"
+      "data": "KeyV"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "b",
-      "data": "keyB"
+      "data": "KeyB"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "n",
-      "data": "keyN"
+      "data": "KeyN"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "m",
-      "data": "keyM"
+      "data": "KeyM"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": ",",
-      "data": "comma"
+      "data": "Comma"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": ".",
-      "data": "dot"
+      "data": "Period"
     },
     {
-      "classes": ["key"],
+      "classes": ["key", "key-hover"],
       "content": "\/",
-      "data": "slash"
+      "data": "Slash"
     },
     {
-      "classes": ["key", "key--dark"],
+      "classes": ["key", "key--dark", "key-hover"],
       "content": "▲",
-      "data": "keyUp"
+      "data": "ArrowUp"
     },
     {
-      "classes": ["key", "key--dark", "key--wide"],
+      "classes": ["key", "key--dark", "key--wide", "key-hover"],
       "content": "Shift",
-      "data": "shiftRight"
+      "data": "ShiftRight"
     }
   ],
   [
     {
-      "classes": ["key", "key--dark"],
+      "classes": ["key", "key--dark", "key-hover"],
       "content": "Ctrl",
-      "data": "ctrlLeft"
+      "data": "ControlLeft"
     },
     {
-      "classes": ["key", "key--dark"],
+      "classes": ["key", "key--dark", "key-hover"],
       "content": "Win",
-      "data": "window"
+      "data": "MetaLeft"
     },
     {
-      "classes": ["key", "key--dark"],
+      "classes": ["key", "key--dark", "key-hover"],
       "content": "Alt",
-      "data": "altLeft"
+      "data": "AltLeft"
     },
     {
-      "classes": ["key", "key--long"],
-      "content": "",
-      "data": "space"
+      "classes": ["key", "key--long", "key-hover"],
+      "content": " ",
+      "data": "Space"
     },
     {
-      "classes": ["key", "key--dark"],
+      "classes": ["key", "key--dark", "key-hover"],
       "content": "Alt",
-      "data": "altRight"
+      "data": "AltRight"
     },
     {
-      "classes": ["key", "key--dark"],
+      "classes": ["key", "key--dark", "key-hover"],
       "content": "◄",
-      "data": "keyLeft"
+      "data": "ArrowLeft"
     },
     {
-      "classes": ["key", "key--dark"],
+      "classes": ["key", "key--dark", "key-hover"],
       "content": "▼",
-      "data": "keyDown"
+      "data": "ArrowDown"
     },
     {
-      "classes": ["key", "key--dark"],
+      "classes": ["key", "key--dark", "key-hover"],
       "content": "►",
-      "data": "keyRight"
+      "data": "ArrowRight"
     },
     {
-      "classes": ["key", "key--dark"],
+      "classes": ["key", "key--dark", "key-hover"],
       "content": "Ctrl",
-      "data": "ctrlRight"
+      "data": "ControlRight"
     }
   ]
 ]

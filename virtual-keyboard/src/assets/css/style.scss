@@ -89,7 +89,7 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.5s;
+  transition: all 0.2s;
 
   &--dark {
     color: #fefefe;
@@ -104,15 +104,22 @@ body {
     width: 313px;
   }
 
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.key-hover {
   &:hover {
     color: #2e2e2e;
     background-color: #70ece6;
   }
+}
 
-  &:active {
-    background-color: #1fc0b8;
-    transform: scale(0.9);
-  }
+.press-key {
+  background-color: #1fc0b8;
+  border-radius: 10px;
+  transform: scale(0.9);
 }
 
 .text {
