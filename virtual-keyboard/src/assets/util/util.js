@@ -62,7 +62,7 @@ const handlerShift = () => {
 const handlerCaps = () => {
   isShift = !isShift;
   const textArray = [];
-  
+
   keys.forEach((key) => {
     if(key.dataset.key.slice(0,3) === 'Key') {
       textArray.push(key);
@@ -89,10 +89,10 @@ export const handlerKeyboard = (currentKey, textArea) => {
         handlerCaps();
         break;
       case 'Enter':
-        console.log('Enter')
+        textArea.value += '\n';
         break;
       case 'Tab':
-        console.log('Tab')
+        textArea.value += '    ';
         break;
     }
   } else {
