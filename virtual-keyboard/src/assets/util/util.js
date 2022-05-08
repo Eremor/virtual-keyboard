@@ -4,6 +4,8 @@ export let isLocked = false;
 export const keys = [];
 export const contentArray = [];
 
+let pressed = new Set();
+
 export const getKeys = async () => {
   try {
     const res = await fetch('./keys.json');
@@ -74,6 +76,55 @@ const handlerCaps = () => {
   changeContentSymbols(textArray);
 }
 
+const changeLanguage = () => {
+  isEn = !isEn;
+  changeContentSymbols(keys);
+}
+
+const handlerLanguage = (callback, currentDataKey, ...codes) => {
+  let current;
+
+  switch(currentDataKey) {
+    case 'ControlLeft':
+    case 'ControlRight':
+      current = currentDataKey.slice(0, 7);
+      break;
+    case 'AltLeft':
+    case 'AltRight':
+      current = currentDataKey.slice(0, 3);
+      break;
+  }
+
+  pressed.add(current);
+
+  for(let code of codes) {
+    if(!pressed.has(code)) {
+      return;
+    }
+  }
+
+  pressed.clear();
+
+  callback();
+}
+
+const deletePressedSet = (currentDataKey) => {
+  let current;
+
+  switch(currentDataKey) {
+    case 'ControlLeft':
+    case 'ControlRight':
+      current = currentDataKey.slice(0, 7);
+      break;
+    case 'AltLeft':
+    case 'AltRight':
+      current = currentDataKey.slice(0, 3);
+      break;
+  }
+
+  pressed.delete(current);
+}
+
 export const handlerKeyboard = (currentKey, textArea) => {
   if(currentKey.classList.contains('key--dark')) {
     switch(currentKey.dataset.key) {
@@ -94,6 +145,12 @@ export const handlerKeyboard = (currentKey, textArea) => {
       case 'Tab':
         textArea.value += '    ';
         break;
+      case 'ControlLeft':
+      case 'ControlRight':
+      case 'AltLeft':
+      case 'AltRight':
+        handlerLanguage(changeLanguage, currentKey.dataset.key, 'Control', 'Alt');
+        break;
     }
   } else {
     textArea.value += currentKey.textContent;
@@ -108,6 +165,12 @@ export const removeActions = (currentKey) => {
         isLocked = false;
         isShift = false;
         changeContentSymbols(keys);
+        break;
+      case 'ControlLeft':
+      case 'ControlRight':
+      case 'AltLeft':
+      case 'AltRight':
+        deletePressedSet(currentKey.dataset.key);
         break;
     }
   }

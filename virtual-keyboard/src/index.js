@@ -9,7 +9,7 @@ const title = new BaseComponent('h1', ['title'], 'RSS Virtual keyboard');
 const textArea = new TextArea();
 const keyboard = new Keyboard();
 const textOS = new BaseComponent('p', ['text'], 'Keyboard created in OS Windows');
-const textLang = new BaseComponent('p', ['text'], 'To switch language: left ctrl + alt');
+const textLang = new BaseComponent('p', ['text'], 'To switch language: ctrl + alt');
 
 keyboard.update();
 
