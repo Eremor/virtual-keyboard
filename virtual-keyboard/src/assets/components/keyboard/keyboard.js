@@ -1,9 +1,7 @@
 import { BaseComponent } from '../base-component';
-import { getKeys } from '../../util/util';
+import { contentArray, getKeys, isEn, keys } from '../../util/util';
 import { KeyboardRow } from './keyboard-row';
 import { Key } from './keyboard-key';
-
-export const keys = [];
 
 export class Keyboard extends BaseComponent {
   constructor() {
@@ -11,7 +9,7 @@ export class Keyboard extends BaseComponent {
   }
 
   update = async () => {
-    this.node.innerHtml = '';
+    this.node.innerHTML = '';
     const keysList = await getKeys();
 
     keysList.forEach((item) => {
@@ -19,7 +17,10 @@ export class Keyboard extends BaseComponent {
 
       for (let i = 0; i < item.length; i++) {
         const { classes, content, data } = item[i];
-        const key = new Key(classes, content, data);
+        contentArray.push(content);
+        const symbolKey = isEn ? content.en : content.ru;
+
+        const key = new Key(classes, symbolKey, data);
         keys.push(key.node);
         row.node.append(key.node);
       }

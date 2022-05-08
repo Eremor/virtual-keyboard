@@ -2,330 +2,650 @@
   [
     {
       "classes": ["key", "key-hover"],
-      "content": "`",
+      "content": {
+        "en": "`",
+        "enShift": "~",
+        "ru": "ё",
+        "ruShift": "Ё"
+      },
       "data": "Backquote"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "1",
+      "content": {
+        "en": "1",
+        "enShift": "!",
+        "ru": "1",
+        "ruShift": "!"
+      },
       "data": "Digit1"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "2",
+      "content": {
+        "en": "2",
+        "enShift": "@",
+        "ru": "2",
+        "ruShift": "\""
+      },
       "data": "Digit2"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "3",
+      "content": {
+        "en": "3",
+        "enShift": "#",
+        "ru": "3",
+        "ruShift": "№"
+      },
       "data": "Digit3"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "4",
+      "content": {
+        "en": "4",
+        "enShift": "$",
+        "ru": "4",
+        "ruShift": ";"
+      },
       "data": "Digit4"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "5",
+      "content": {
+        "en": "5",
+        "enShift": "%",
+        "ru": "5",
+        "ruShift": "%"
+      },
       "data": "Digit5"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "6",
+      "content": {
+        "en": "6",
+        "enShift": "^",
+        "ru": "6",
+        "ruShift": ":"
+      },
       "data": "Digit6"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "7",
+      "content": {
+        "en": "7",
+        "enShift": "&",
+        "ru": "7",
+        "ruShift": "?"
+      },
       "data": "Digit7"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "8",
+      "content": {
+        "en": "8",
+        "enShift": "*",
+        "ru": "8",
+        "ruShift": "*"
+      },
       "data": "Digit8"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "9",
+      "content": {
+        "en": "9",
+        "enShift": "(",
+        "ru": "9",
+        "ruShift": "("
+      },
       "data": "Digit9"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "0",
+      "content": {
+        "en": "0",
+        "enShift": ")",
+        "ru": "0",
+        "ruShift": ")"
+      },
       "data": "Digit0"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "-",
+      "content": {
+        "en": "-",
+        "enShift": "_",
+        "ru": "-",
+        "ruShift": "_"
+      },
       "data": "Minus"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "=",
+      "content": {
+        "en": "=",
+        "enShift": "+",
+        "ru": "=",
+        "ruShift": "+"
+      },
       "data": "Equal"
     },
     {
       "classes": ["key", "key--dark", "key--wide", "key-hover"],
-      "content": "Backspace",
+      "content": {
+        "en": "Backspace",
+        "enShift": "Backspace",
+        "ru": "Backspace",
+        "ruShift": "Backspace"
+      },
       "data": "Backspace"
     }
   ],
   [
     {
       "classes": ["key", "key--dark", "key-hover"],
-      "content": "Tab",
+      "content": {
+        "en": "Tab",
+        "enShift": "Tab",
+        "ru": "Tab",
+        "ruShift": "Tab"
+      },
       "data": "Tab"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "q",
+      "content": {
+        "en": "q",
+        "enShift": "Q",
+        "ru": "й",
+        "ruShift": "Й"
+      },
       "data": "KeyQ"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "w",
+      "content": {
+        "en": "w",
+        "enShift": "W",
+        "ru": "ц",
+        "ruShift": "Ц"
+      },
       "data": "KeyW"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "e",
+      "content": {
+        "en": "e",
+        "enShift": "E",
+        "ru": "у",
+        "ruShift": "У"
+      },
       "data": "KeyE"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "r",
+      "content": {
+        "en": "r",
+        "enShift": "R",
+        "ru": "к",
+        "ruShift": "К"
+      },
       "data": "KeyR"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "t",
+      "content": {
+        "en": "t",
+        "enShift": "T",
+        "ru": "е",
+        "ruShift": "Е"
+      },
       "data": "KeyT"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "y",
+      "content": {
+        "en": "y",
+        "enShift": "Y",
+        "ru": "н",
+        "ruShift": "Н"
+      },
       "data": "KeyY"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "u",
+      "content": {
+        "en": "u",
+        "enShift": "U",
+        "ru": "г",
+        "ruShift": "Г"
+      },
       "data": "KeyU"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "i",
+      "content": {
+        "en": "i",
+        "enShift": "I",
+        "ru": "ш",
+        "ruShift": "Ш"
+      },
       "data": "KeyI"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "o",
+      "content": {
+        "en": "o",
+        "enShift": "O",
+        "ru": "щ",
+        "ruShift": "Щ"
+      },
       "data": "KeyO"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "p",
+      "content": {
+        "en": "p",
+        "enShift": "P",
+        "ru": "з",
+        "ruShift": "З"
+      },
       "data": "KeyP"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "[",
+      "content": {
+        "en": "[",
+        "enShift": "{",
+        "ru": "х",
+        "ruShift": "Х"
+      },
       "data": "BracketLeft"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "]",
+      "content": {
+        "en": "]",
+        "enShift": "}",
+        "ru": "ъ",
+        "ruShift": "Ъ"
+      },
       "data": "BracketRight"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "\\",
+      "content": {
+        "en": "\\",
+        "enShift": "|",
+        "ru": "\\",
+        "ruShift": "\/"
+      },
       "data": "Backslash"
     },
     {
       "classes": ["key", "key--dark", "key-hover"],
-      "content": "Del",
+      "content": {
+        "en": "Del",
+        "enShift": "Del",
+        "ru": "Del",
+        "ruShift": "Del"
+      },
       "data": "Delete"
     }
   ],
   [
     {
       "classes": ["key", "key--wide", "key--dark", "key-hover"],
-      "content": "CapsLock",
+      "content": {
+        "en": "CapsLock",
+        "enShift": "CapsLock",
+        "ru": "CapsLock",
+        "ruShift": "CapsLock"
+      },
       "data": "CapsLock"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "a",
+      "content": {
+        "en": "a",
+        "enShift": "A",
+        "ru": "ф",
+        "ruShift": "Ф"
+      },
       "data": "KeyA"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "s",
+      "content": {
+        "en": "s",
+        "enShift": "S",
+        "ru": "ы",
+        "ruShift": "Ы"
+      },
       "data": "KeyS"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "d",
+      "content": {
+        "en": "d",
+        "enShift": "D",
+        "ru": "в",
+        "ruShift": "В"
+      },
       "data": "KeyD"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "f",
+      "content": {
+        "en": "f",
+        "enShift": "F",
+        "ru": "а",
+        "ruShift": "А"
+      },
       "data": "KeyF"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "g",
+      "content": {
+        "en": "g",
+        "enShift": "G",
+        "ru": "п",
+        "ruShift": "П"
+      },
       "data": "KeyG"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "h",
+      "content": {
+        "en": "h",
+        "enShift": "H",
+        "ru": "р",
+        "ruShift": "Р"
+      },
       "data": "KeyH"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "j",
+      "content": {
+        "en": "j",
+        "enShift": "J",
+        "ru": "о",
+        "ruShift": "О"
+      },
       "data": "KeyJ"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "k",
+      "content": {
+        "en": "k",
+        "enShift": "K",
+        "ru": "л",
+        "ruShift": "Л"
+      },
       "data": "KeyK"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "l",
+      "content": {
+        "en": "l",
+        "enShift": "L",
+        "ru": "д",
+        "ruShift": "Д"
+      },
       "data": "KeyL"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": ";",
+      "content": {
+        "en": ";",
+        "enShift": ":",
+        "ru": "ж",
+        "ruShift": "Ж"
+      },
       "data": "Semicolon"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "'",
+      "content": {
+        "en": "'",
+        "enShift": "\"",
+        "ru": "э",
+        "ruShift": "Э"
+      },
       "data": "Quote"
     },
     {
       "classes": ["key", "key--dark", "key--wide", "key-hover"],
-      "content": "Enter",
+      "content": {
+        "en": "Enter",
+        "enShift": "Enter",
+        "ru": "Enter",
+        "ruShift": "Enter"
+      },
       "data": "Enter"
     }
   ],
   [
     {
       "classes": ["key", "key--wide", "key--dark", "key-hover"],
-      "content": "Shift",
+      "content": {
+        "en": "Shift",
+        "enShift": "Shift",
+        "ru": "Shift",
+        "ruShift": "Shift"
+      },
       "data": "ShiftLeft"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "z",
+      "content": {
+        "en": "z",
+        "enShift": "Z",
+        "ru": "я",
+        "ruShift": "Я"
+      },
       "data": "KeyZ"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "x",
+      "content": {
+        "en": "x",
+        "enShift": "X",
+        "ru": "ч",
+        "ruShift": "Ч"
+      },
       "data": "KeyX"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "c",
+      "content": {
+        "en": "c",
+        "enShift": "C",
+        "ru": "с",
+        "ruShift": "С"
+      },
       "data": "KeyC"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "v",
+      "content": {
+        "en": "v",
+        "enShift": "V",
+        "ru": "м",
+        "ruShift": "М"
+      },
       "data": "KeyV"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "b",
+      "content": {
+        "en": "b",
+        "enShift": "B",
+        "ru": "и",
+        "ruShift": "И"
+      },
       "data": "KeyB"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "n",
+      "content": {
+        "en": "n",
+        "enShift": "N",
+        "ru": "т",
+        "ruShift": "Т"
+      },
       "data": "KeyN"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "m",
+      "content": {
+        "en": "m",
+        "enShift": "M",
+        "ru": "ь",
+        "ruShift": "Ь"
+      },
       "data": "KeyM"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": ",",
+      "content": {
+        "en": ",",
+        "enShift": "<",
+        "ru": "б",
+        "ruShift": "Б"
+      },
       "data": "Comma"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": ".",
+      "content": {
+        "en": ".",
+        "enShift": ">",
+        "ru": "ю",
+        "ruShift": "Ю"
+      },
       "data": "Period"
     },
     {
       "classes": ["key", "key-hover"],
-      "content": "\/",
+      "content": {
+        "en": "\/",
+        "enShift": "?",
+        "ru": ".",
+        "ruShift": ","
+      },
       "data": "Slash"
     },
     {
       "classes": ["key", "key--dark", "key-hover"],
-      "content": "▲",
+      "content": {
+        "en": "▲",
+        "enShift": "▲",
+        "ru": "▲",
+        "ruShift": "▲"
+      },
       "data": "ArrowUp"
     },
     {
       "classes": ["key", "key--dark", "key--wide", "key-hover"],
-      "content": "Shift",
+      "content": {
+        "en": "Shift",
+        "enShift": "Shift",
+        "ru": "Shift",
+        "ruShift": "Shift"
+      },
       "data": "ShiftRight"
     }
   ],
   [
     {
       "classes": ["key", "key--dark", "key-hover"],
-      "content": "Ctrl",
+      "content": {
+        "en": "Ctrl",
+        "enShift": "Ctrl",
+        "ru": "Ctrl",
+        "ruShift": "Ctrl"
+      },
       "data": "ControlLeft"
     },
     {
       "classes": ["key", "key--dark", "key-hover"],
-      "content": "Win",
+      "content": {
+        "en": "Win",
+        "enShift": "Win",
+        "ru": "Win",
+        "ruShift": "Win"
+      },
       "data": "MetaLeft"
     },
     {
       "classes": ["key", "key--dark", "key-hover"],
-      "content": "Alt",
+      "content": {
+        "en": "Alt",
+        "enShift": "Alt",
+        "ru": "Alt",
+        "ruShift": "Alt"
+      },
       "data": "AltLeft"
     },
     {
       "classes": ["key", "key--long", "key-hover"],
-      "content": " ",
+      "content": {
+        "en": " ",
+        "enShift": " ",
+        "ru": " ",
+        "ruShift": " "
+      },
       "data": "Space"
     },
     {
       "classes": ["key", "key--dark", "key-hover"],
-      "content": "Alt",
+      "content": {
+        "en": "Alt",
+        "enShift": "Alt",
+        "ru": "Alt",
+        "ruShift": "Alt"
+      },
       "data": "AltRight"
     },
     {
       "classes": ["key", "key--dark", "key-hover"],
-      "content": "◄",
+      "content": {
+        "en": "◄",
+        "enShift": "◄",
+        "ru": "◄",
+        "ruShift": "◄"
+      },
       "data": "ArrowLeft"
     },
     {
       "classes": ["key", "key--dark", "key-hover"],
-      "content": "▼",
+      "content": {
+        "en": "▼",
+        "enShift": "▼",
+        "ru": "▼",
+        "ruShift": "▼"
+      },
       "data": "ArrowDown"
     },
     {
       "classes": ["key", "key--dark", "key-hover"],
-      "content": "►",
+      "content": {
+        "en": "►",
+        "enShift": "►",
+        "ru": "►",
+        "ruShift": "►"
+      },
       "data": "ArrowRight"
     },
     {
       "classes": ["key", "key--dark", "key-hover"],
-      "content": "Ctrl",
+      "content": {
+        "en": "Ctrl",
+        "enShift": "Ctrl",
+        "ru": "Ctrl",
+        "ruShift": "Ctrl"
+      },
       "data": "ControlRight"
     }
   ]
