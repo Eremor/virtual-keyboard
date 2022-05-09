@@ -5,6 +5,8 @@ export const keys = [];
 export const contentArray = [];
 
 let pressed = new Set();
+let cursorPositionStart = 0;
+let cursorPositionEnd = 0;
 
 export const getKeys = async () => {
   try {
@@ -49,8 +51,40 @@ const changeContentSymbols = (keysArray) => {
 }
 
 const deleteLastSymbol = (textArea) => {
-  if(textArea.value.length > 0) {
+  const { start, end } = getCursorPosition();
+  const length = textArea.value.length;
+
+  if(start === length || end === length) {
     textArea.value = textArea.value.slice(0, -1);
+  } else {
+    if(start > 0 && end > 0) {
+      const remainingText = textArea.value.slice(0, start - 1) + textArea.value.slice(end, length);
+      textArea.value = remainingText;
+    }
+  }
+
+  if(start > 0 && end > 0) {
+    textArea.setSelectionRange(start - 1, end - 1);
+    setCursorPosition(start - 1, end - 1);
+  }
+}
+
+const deleteNextSymbol = (textArea) => {
+  const { start, end } = getCursorPosition();
+  const length = textArea.value.length;
+
+  if(start === 0 || end === 0) {
+    textArea.value = textArea.value.slice(1, length);
+  } else {
+    if(start < length && end < length) {
+      const remainingText = textArea.value.slice(0, start) + textArea.value.slice(end + 1, length);
+      textArea.value = remainingText;
+    }
+  }
+
+  if(start < length && end < length) {
+    textArea.setSelectionRange(start, end);
+    setCursorPosition(start, end);
   }
 }
 
@@ -125,7 +159,39 @@ const deletePressedSet = (currentDataKey) => {
   pressed.delete(current);
 }
 
+export const setCursorPosition = (start, end) => {
+  cursorPositionStart = start;
+  cursorPositionEnd = end;
+}
+
+const getCursorPosition = () => {
+  const start = cursorPositionStart;
+  const end = cursorPositionEnd;
+  return { start, end };
+}
+
+const addTextContent = (text, textArea) => {
+  const length = textArea.value.length;
+  const start = textArea.selectionStart;
+  const indent = text.length;
+
+  if(start === length) {
+    textArea.value += text;
+    setCursorPosition(length, length);
+  } else if(start === 0) {
+    textArea.value = text + textArea.value;
+    setCursorPosition(start + indent, start + indent);
+    textArea.setSelectionRange(start + indent, start + indent);
+  } else {
+    const remainingText = textArea.value.slice(0, start) + text + textArea.value.slice(start, length);
+    textArea.value = remainingText;
+    setCursorPosition(start + indent, start + indent);
+    textArea.setSelectionRange(start + indent, start + indent);
+  }
+}
+
 export const handlerKeyboard = (currentKey, textArea) => {
+  textArea.focus();
   if(currentKey.classList.contains('key--dark')) {
     switch(currentKey.dataset.key) {
       case 'Backspace':
@@ -140,10 +206,10 @@ export const handlerKeyboard = (currentKey, textArea) => {
         handlerCaps();
         break;
       case 'Enter':
-        textArea.value += '\n';
+        addTextContent('\n', textArea);
         break;
       case 'Tab':
-        textArea.value += '    ';
+        addTextContent('    ', textArea);
         break;
       case 'ControlLeft':
       case 'ControlRight':
@@ -151,9 +217,12 @@ export const handlerKeyboard = (currentKey, textArea) => {
       case 'AltRight':
         handlerLanguage(changeLanguage, currentKey.dataset.key, 'Control', 'Alt');
         break;
+      case 'Delete':
+        deleteNextSymbol(textArea);
+        break;
     }
   } else {
-    textArea.value += currentKey.textContent;
+    addTextContent(currentKey.textContent, textArea);
   }
 }
 

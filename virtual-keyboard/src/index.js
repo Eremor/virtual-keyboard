@@ -2,7 +2,7 @@ import { BaseComponent } from './assets/components/base-component';
 import { Keyboard } from './assets/components/keyboard/keyboard';
 import { TextArea } from './assets/components/keyboard/textarea';
 import './assets/css/style.scss';
-import { addActiveKey, handlerKeyboard, isLocked, isShift, keys, removeActions, removeActiveKey } from './assets/util/util';
+import { addActiveKey, handlerKeyboard, keys, removeActions, removeActiveKey, setCursorPosition } from './assets/util/util';
 
 const wrapper = new BaseComponent('div', ['wrapper']);
 const title = new BaseComponent('h1', ['title'], 'RSS Virtual keyboard');
@@ -47,6 +47,7 @@ keyboard.node.addEventListener('mouseout', (e) => {
 });
 
 document.addEventListener('keydown', (e) => {
+  e.preventDefault();
   const currentKey = keys.filter((key) => key.dataset.key === e.code)[0];
   addActiveKey(currentKey);
   handlerKeyboard(currentKey, textArea.node);
@@ -57,3 +58,10 @@ document.addEventListener('keyup', (e) => {
   removeActiveKey(currentKey);
   removeActions(currentKey);
 });
+
+textArea.node.addEventListener('click', (e) => {
+  e.preventDefault();
+  const start = textArea.node.selectionStart;
+  const end = textArea.node.selectionEnd;
+  setCursorPosition(start, end);
+})
