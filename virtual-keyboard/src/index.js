@@ -2,7 +2,13 @@ import { BaseComponent } from './assets/components/base-component';
 import { Keyboard } from './assets/components/keyboard/keyboard';
 import { TextArea } from './assets/components/keyboard/textarea';
 import './assets/css/style.scss';
-import { addActiveKey, handlerKeyboard, keys, removeActions, removeActiveKey, setCursorPosition } from './assets/util/util';
+import { addActiveKey,
+  handlerKeyboard,
+  keys,
+  removeActions,
+  removeActiveKey,
+  setCursorPosition,
+  toggleActiveKey } from './assets/util/util';
 
 const wrapper = new BaseComponent('div', ['wrapper']);
 const title = new BaseComponent('h1', ['title'], 'RSS Virtual keyboard');
@@ -26,7 +32,11 @@ document.body.append(wrapper.node);
 keyboard.node.addEventListener('mousedown', (e) => {
   if (e.target.classList.contains('key')) {
     const currentKey = e.target;
-    addActiveKey(currentKey);
+    if (currentKey.dataset.key === 'CapsLock') {
+      toggleActiveKey(currentKey);
+    } else {
+      addActiveKey(currentKey);
+    }
     handlerKeyboard(currentKey, textArea.node);
   }
 });
@@ -34,7 +44,9 @@ keyboard.node.addEventListener('mousedown', (e) => {
 keyboard.node.addEventListener('mouseup', (e) => {
   if (e.target.classList.contains('key')) {
     const currentKey = e.target;
-    removeActiveKey(currentKey);
+    if (currentKey.dataset.key !== 'CapsLock') {
+      removeActiveKey(currentKey);
+    }
     removeActions(currentKey);
   }
 });
@@ -42,20 +54,29 @@ keyboard.node.addEventListener('mouseup', (e) => {
 keyboard.node.addEventListener('mouseout', (e) => {
   if (e.target.classList.contains('key')) {
     const currentKey = e.target;
-    removeActiveKey(currentKey);
+    const data = currentKey.dataset.key;
+    if (data !== 'CapsLock' && data !== 'ShiftLeft' && data !== 'ShiftRight') {
+      removeActiveKey(currentKey);
+    }
   }
 });
 
 document.addEventListener('keydown', (e) => {
   e.preventDefault();
   const currentKey = keys.filter((key) => key.dataset.key === e.code)[0];
-  addActiveKey(currentKey);
+  if (e.code === 'CapsLock') {
+    toggleActiveKey(currentKey);
+  } else {
+    addActiveKey(currentKey);
+  }
   handlerKeyboard(currentKey, textArea.node);
 });
 
 document.addEventListener('keyup', (e) => {
   const currentKey = keys.filter((key) => key.dataset.key === e.code)[0];
-  removeActiveKey(currentKey);
+  if (e.code !== 'CapsLock') {
+    removeActiveKey(currentKey);
+  }
   removeActions(currentKey);
 });
 
@@ -64,4 +85,4 @@ textArea.node.addEventListener('click', (e) => {
   const start = textArea.node.selectionStart;
   const end = textArea.node.selectionEnd;
   setCursorPosition(start, end);
-})
+});
