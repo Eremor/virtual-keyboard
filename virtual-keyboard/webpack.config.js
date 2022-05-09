@@ -63,7 +63,11 @@ module.exports = ({develop}) => ({
       ],
     }),
     new CleanWebpackPlugin({
-      cleanStaleWebpackAssets: false
+      cleanStaleWebpackAssets: false,
+      cleanOnceBeforeBuildPatterns: [
+        '**/*',
+        '!.git',
+      ]
     }),
     ...esLintPlugin(develop)
   ],
